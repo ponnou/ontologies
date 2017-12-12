@@ -1,0 +1,796 @@
+<div id="changelog">
+<h2 id="changes" class="list">Changes from last version</h2>
+<h3 id="changeClass" class="list">Classes</h3>
+<p><u>Modified classes</u></p>
+<ul><li><a href="#http://www.w3.org/2006/time#TimeZone">http://www.w3.org/2006/time#TimeZone</a>
+<ul>
+<li>Added: <http://www.w3.org/2004/02/skos/core#note> "A designated timezone is associated with a geographic region. However, for a particular region the offset from UTC often varies seasonally, and the dates of the changes may vary from year to year. The timezone designation usually changes for the different seasons (e.g. Australian Eastern Standard Time vs. Australian Eastern Daylight Time). Furthermore, the offset for a timezone may change over longer timescales, though its designation might not.  
+
+Detailed guidance about working with time zones is given in http://www.w3.org/TR/timezone/ ."@en</li>
+<li>Added: rdfs:comment "A Time Zone specifies the amount by which the local time is offset from UTC. 
+	A time zone is usually denoted geographically (e.g. Australian Eastern Daylight Time), with a constant value in a given region. 
+The region where it applies and the offset from UTC are specified by a locally recognised governing authority."@en</li>
+<li>Added: <http://www.w3.org/2004/02/skos/core#definition> "A Time Zone specifies the amount by which the local time is offset from UTC. 
+	A time zone is usually denoted geographically (e.g. Australian Eastern Daylight Time), with a constant value in a given region. 
+The region where it applies and the offset from UTC are specified by a locally recognised governing authority."@en</li>
+<li>Added: <http://www.w3.org/2004/02/skos/core#historyNote> "In the original 2006 version of OWL-Time, the TimeZone class, with several properties corresponding to a specific model of time-zones, was defined in a separate namespace \"http://www.w3.org/2006/timezone#\". 
+
+In the current version a class with same local name is put into the main OWL-Time namespace, removing the dependency on the external namespace. 
+
+An alignment axiom 
+	tzont:TimeZone rdfs:subClassOf time:TimeZone . 
+allows data encoded according to the previous version to be consistent with the updated ontology. "^^xsd:string</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#historyNote> "In the original 2006 version of OWL-Time, the TimeZone class, with several properties corresponding to a specific model of time-zones, was defined in a separate namespace \"http://www.w3.org/2006/timezone#\". 
+
+In the current version a class with same local name is put into the main OWL-Time namespace, removing the dependency on the external namespace. 
+
+An alignment axiom 
+	tzont:TimeZone rdfs:subClassOf time:TimeZone . 
+allows data encoded according to the previous version to be consistent with the updated ontology. "^^xsd:string</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "A designated timezone is associated with a geographic region. However, for a particular region the offset from UTC often varies seasonally, and the dates of the changes may vary from year to year. The timezone designation usually changes for the different seasons (e.g. Australian Eastern Standard Time vs. Australian Eastern Daylight Time). Furthermore, the offset for a timezone may change over longer timescales, though its designation might not.  
+
+Detailed guidance about working with time zones is given in http://www.w3.org/TR/timezone/ ."@en</li>
+<li>Deleted: rdfs:comment "A Time Zone specifies the amount by which the local time is offset from UTC. 
+	A time zone is usually denoted geographically (e.g. Australian Eastern Daylight Time), with a constant value in a given region. 
+The region where it applies and the offset from UTC are specified by a locally recognised governing authority."@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "A Time Zone specifies the amount by which the local time is offset from UTC. 
+	A time zone is usually denoted geographically (e.g. Australian Eastern Daylight Time), with a constant value in a given region. 
+The region where it applies and the offset from UTC are specified by a locally recognised governing authority."@en</li>
+</ul>
+</li>
+<li><a href="#http://www.w3.org/2006/time#generalYear">http://www.w3.org/2006/time#generalYear</a>
+<ul>
+<li>Added: rdfs:comment "Year number - formulated as a text string with a pattern constraint to reproduce the same lexical form as gYear, but not restricted to values from the Gregorian calendar. 
+Note that the value-space is not defined, so a generic OWL2 processor cannot compute ordering relationships of values of this type."@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Year number - formulated as a text string with a pattern constraint to reproduce the same lexical form as gYear, but not restricted to values from the Gregorian calendar. 
+Note that the value-space is not defined, so a generic OWL2 processor cannot compute ordering relationships of values of this type."@en</li>
+</ul>
+</li>
+<li><a href="#http://www.w3.org/2006/time#Year">http://www.w3.org/2006/time#Year</a>
+<ul>
+<li>Added: <http://www.w3.org/2004/02/skos/core#historyNote> "Year was proposed in the 2006 version of OWL-Time as an example of how DurationDescription could be specialized to allow for a duration to be restricted to a number of years. 
+
+It is deprecated in this edition of OWL-Time. "^^xsd:string</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#historyNote> "Year was proposed in the 2006 version of OWL-Time as an example of how DurationDescription could be specialized to allow for a duration to be restricted to a number of years. 
+
+It is deprecated in this edition of OWL-Time. "^^xsd:string</li>
+</ul>
+</li>
+<li><a href="#http://www.w3.org/2006/time#TRS">http://www.w3.org/2006/time#TRS</a>
+<ul>
+<li>Added: rdfs:comment "A temporal reference system, such as a temporal coordinate system (with an origin, direction, and scale), a calendar-clock combination, or a (possibly hierarchical) ordinal system. 
+
+This is a stub class, representing the set of all temporal reference systems."@en</li>
+<li>Added: <http://www.w3.org/2004/02/skos/core#definition> "A temporal reference system, such as a temporal coordinate system (with an origin, direction, and scale), a calendar-clock combination, or a (possibly hierarchical) ordinal system. 
+
+This is a stub class, representing the set of all temporal reference systems."@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "A temporal reference system, such as a temporal coordinate system (with an origin, direction, and scale), a calendar-clock combination, or a (possibly hierarchical) ordinal system. 
+
+This is a stub class, representing the set of all temporal reference systems."@en</li>
+<li>Deleted: rdfs:comment "A temporal reference system, such as a temporal coordinate system (with an origin, direction, and scale), a calendar-clock combination, or a (possibly hierarchical) ordinal system. 
+
+This is a stub class, representing the set of all temporal reference systems."@en</li>
+</ul>
+</li>
+<li><a href="#http://www.w3.org/2006/time#TemporalUnit">http://www.w3.org/2006/time#TemporalUnit</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#UnitOfMeasure</li>
+<li>Added: rdfs:comment "The unit of measure for time"^^xsd:string</li>
+<li>Added: <http://www.w3.org/2004/02/skos/core#changeNote> "Remove enumeration from definition, in order to allow other units to be used when required in other coordinate systems. 
+NOTE: existing units are still present as members of the class, but the class membership is now open. 
+
+In the original OWL-Time the following constraint appeared: 
+  owl:oneOf (
+      time:unitSecond
+      time:unitMinute
+      time:unitHour
+      time:unitDay
+      time:unitWeek
+      time:unitMonth
+      time:unitYear
+    ) ;"@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#changeNote> "Remove enumeration from definition, in order to allow other units to be used when required in other coordinate systems. 
+NOTE: existing units are still present as members of the class, but the class membership is now open. 
+
+In the original OWL-Time the following constraint appeared: 
+  owl:oneOf (
+      time:unitSecond
+      time:unitMinute
+      time:unitHour
+      time:unitDay
+      time:unitWeek
+      time:unitMonth
+      time:unitYear
+    ) ;"@en</li>
+</ul>
+</li>
+<li><a href="#http://www.w3.org/2006/time#DayOfWeek">http://www.w3.org/2006/time#DayOfWeek</a>
+<ul>
+<li>Added: <http://www.w3.org/2004/02/skos/core#changeNote> "Remove enumeration from definition, in order to allow other days to be used when required in other calendars. 
+NOTE: existing days are still present as members of the class, but the class membership is now open. 
+
+In the original OWL-Time the following constraint appeared: 
+  owl:oneOf (
+      time:Monday
+      time:Tuesday
+      time:Wednesday
+      time:Thursday
+      time:Friday
+      time:Saturday
+      time:Sunday
+    ) ;"@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#changeNote> "Remove enumeration from definition, in order to allow other days to be used when required in other calendars. 
+NOTE: existing days are still present as members of the class, but the class membership is now open. 
+
+In the original OWL-Time the following constraint appeared: 
+  owl:oneOf (
+      time:Monday
+      time:Tuesday
+      time:Wednesday
+      time:Thursday
+      time:Friday
+      time:Saturday
+      time:Sunday
+    ) ;"@en</li>
+</ul>
+</li>
+</ul><p><u>Added classes</u></p>
+<ul><li><a href="#https://w3id.org/saref#Temperature">https://w3id.org/saref#Temperature</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#Property</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#Price">https://w3id.org/saref#Price</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#Property</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#SwitchOnService">https://w3id.org/saref#SwitchOnService</a>
+<ul>
+<li><li>Added: SubClass of https://w3id.org/saref#Service</li>
+<li></ul>
+</li>
+<li><a href="#https://w3id.org/saref#OnCommand">https://w3id.org/saref#OnCommand</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#Command</li>
+<li>Added: DisjointClasses DisjointClasses(&lt;https://w3id.org/saref#OffCommand&gt; &lt;https://w3id.org/saref#OnCommand&gt;)</li>
+<li></ul>
+</li>
+<li><a href="#https://w3id.org/saref#GetMeterDataCommand">https://w3id.org/saref#GetMeterDataCommand</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#GetCommand</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#ActuatingFunction">https://w3id.org/saref#ActuatingFunction</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#Function</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#MicroRenewable">https://w3id.org/saref#MicroRenewable</a>
+<ul>
+<li><li>Added: SubClass of https://w3id.org/saref#FunctionRelated</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#State">https://w3id.org/saref#State</a>
+</li>
+<li><a href="#https://w3id.org/saref#GetSensingDataCommand">https://w3id.org/saref#GetSensingDataCommand</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#GetCommand</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#PauseCommand">https://w3id.org/saref#PauseCommand</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#Command</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#EnergyUnit">https://w3id.org/saref#EnergyUnit</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#UnitOfMeasure</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#LightingDevice">https://w3id.org/saref#LightingDevice</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#FunctionRelated</li>
+<li></ul>
+</li>
+<li><a href="#https://w3id.org/saref#PressureUnit">https://w3id.org/saref#PressureUnit</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#UnitOfMeasure</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#GetMeterHistoryCommand">https://w3id.org/saref#GetMeterHistoryCommand</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#GetCommand</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#Network">https://w3id.org/saref#Network</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#FunctionRelated</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#Power">https://w3id.org/saref#Power</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#Property</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#Switch">https://w3id.org/saref#Switch</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#Actuator</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#Service">https://w3id.org/saref#Service</a>
+<ul>
+<li><li></ul>
+</li>
+<li><a href="#https://w3id.org/saref#OffCommand">https://w3id.org/saref#OffCommand</a>
+<ul>
+<li><li>Added: DisjointClasses DisjointClasses(&lt;https://w3id.org/saref#OffCommand&gt; &lt;https://w3id.org/saref#OnCommand&gt;)</li>
+<li>Added: SubClass of https://w3id.org/saref#Command</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#PowerUnit">https://w3id.org/saref#PowerUnit</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#UnitOfMeasure</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#CloseState">https://w3id.org/saref#CloseState</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#OpenCloseState</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#Actuator">https://w3id.org/saref#Actuator</a>
+<ul>
+<li><li>Added: SubClass of https://w3id.org/saref#FunctionRelated</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#Measurement">https://w3id.org/saref#Measurement</a>
+<ul>
+<li><li><li><li><li><li></ul>
+</li>
+<li><a href="#https://w3id.org/saref#Motion">https://w3id.org/saref#Motion</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#Property</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#Water">https://w3id.org/saref#Water</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#Commodity</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#StepDownCommand">https://w3id.org/saref#StepDownCommand</a>
+<ul>
+<li><li>Added: SubClass of https://w3id.org/saref#Command</li>
+<li>Added: DisjointClasses DisjointClasses(&lt;https://w3id.org/saref#StepDownCommand&gt; &lt;https://w3id.org/saref#StepUpCommand&gt;)</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#Command">https://w3id.org/saref#Command</a>
+<ul>
+<li><li><li></ul>
+</li>
+<li><a href="#https://w3id.org/saref#MeteringFunction">https://w3id.org/saref#MeteringFunction</a>
+<ul>
+<li><li><li>Added: SubClass of https://w3id.org/saref#Function</li>
+<li></ul>
+</li>
+<li><a href="#https://w3id.org/saref#Multimedia">https://w3id.org/saref#Multimedia</a>
+<ul>
+<li><li>Added: SubClass of https://w3id.org/saref#FunctionRelated</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#Property">https://w3id.org/saref#Property</a>
+<ul>
+<li><li><li></ul>
+</li>
+<li><a href="#https://w3id.org/saref#OpenState">https://w3id.org/saref#OpenState</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#OpenCloseState</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#StopState">https://w3id.org/saref#StopState</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#StartStopState</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#StartStopState">https://w3id.org/saref#StartStopState</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#State</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#EnergyMeter">https://w3id.org/saref#EnergyMeter</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#Meter</li>
+<li><li><li><li></ul>
+</li>
+<li><a href="#https://w3id.org/saref#LightSwitch">https://w3id.org/saref#LightSwitch</a>
+<ul>
+<li><li>Added: SubClass of https://w3id.org/saref#Switch</li>
+<li><li><li><li><li></ul>
+</li>
+<li><a href="#https://w3id.org/saref#Humidity">https://w3id.org/saref#Humidity</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#Property</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#WashingMachine">https://w3id.org/saref#WashingMachine</a>
+<ul>
+<li><li>Added: SubClass of https://w3id.org/saref#Appliance</li>
+<li><li><li>Added: SubClass of https://w3id.org/saref#Load</li>
+<li></ul>
+</li>
+<li><a href="#https://w3id.org/saref#Gas">https://w3id.org/saref#Gas</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#Commodity</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#Storage">https://w3id.org/saref#Storage</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#EnergyRelated</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#StepUpCommand">https://w3id.org/saref#StepUpCommand</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#Command</li>
+<li><li>Added: DisjointClasses DisjointClasses(&lt;https://w3id.org/saref#StepDownCommand&gt; &lt;https://w3id.org/saref#StepUpCommand&gt;)</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#Electricity">https://w3id.org/saref#Electricity</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#Commodity</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#DoorSwitch">https://w3id.org/saref#DoorSwitch</a>
+<ul>
+<li><li>Added: SubClass of https://w3id.org/saref#Switch</li>
+<li><li><li></ul>
+</li>
+<li><a href="#https://w3id.org/saref#Generator">https://w3id.org/saref#Generator</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#EnergyRelated</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#Device">https://w3id.org/saref#Device</a>
+<ul>
+<li><li><li><li><li><li><li><li><li><li><li><li><li><li></ul>
+</li>
+<li><a href="#https://w3id.org/saref#GetCurrentMeterValueCommand">https://w3id.org/saref#GetCurrentMeterValueCommand</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#GetCommand</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#ToggleCommand">https://w3id.org/saref#ToggleCommand</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#Command</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#SetLevelCommand">https://w3id.org/saref#SetLevelCommand</a>
+<ul>
+<li><li>Added: SubClass of https://w3id.org/saref#Command</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#OpenCommand">https://w3id.org/saref#OpenCommand</a>
+<ul>
+<li>Added: DisjointClasses DisjointClasses(&lt;https://w3id.org/saref#CloseCommand&gt; &lt;https://w3id.org/saref#OpenCommand&gt;)</li>
+<li>Added: SubClass of https://w3id.org/saref#Command</li>
+<li></ul>
+</li>
+<li><a href="#https://w3id.org/saref#StartState">https://w3id.org/saref#StartState</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#StartStopState</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#EventFunction">https://w3id.org/saref#EventFunction</a>
+<ul>
+<li><li>Added: SubClass of https://w3id.org/saref#Function</li>
+<li></ul>
+</li>
+<li><a href="#https://w3id.org/saref#Load">https://w3id.org/saref#Load</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#EnergyRelated</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#HVAC">https://w3id.org/saref#HVAC</a>
+<ul>
+<li><li>Added: SubClass of https://w3id.org/saref#FunctionRelated</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#Smoke">https://w3id.org/saref#Smoke</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#Property</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#Appliance">https://w3id.org/saref#Appliance</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#FunctionRelated</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#TemperatureUnit">https://w3id.org/saref#TemperatureUnit</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#UnitOfMeasure</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#StopCommand">https://w3id.org/saref#StopCommand</a>
+<ul>
+<li>Added: DisjointClasses DisjointClasses(&lt;https://w3id.org/saref#StartCommand&gt; &lt;https://w3id.org/saref#StopCommand&gt;)</li>
+<li>Added: SubClass of https://w3id.org/saref#Command</li>
+<li></ul>
+</li>
+<li><a href="#https://w3id.org/saref#SensingFunction">https://w3id.org/saref#SensingFunction</a>
+<ul>
+<li><li><li>Added: SubClass of https://w3id.org/saref#Function</li>
+<li></ul>
+</li>
+<li><a href="#https://w3id.org/saref#Function">https://w3id.org/saref#Function</a>
+<ul>
+<li></ul>
+</li>
+<li><a href="#https://w3id.org/saref#Currency">https://w3id.org/saref#Currency</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#UnitOfMeasure</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#OnState">https://w3id.org/saref#OnState</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#OnOffState</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#OnOffState">https://w3id.org/saref#OnOffState</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#State</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#OffState">https://w3id.org/saref#OffState</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#OnOffState</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#StartCommand">https://w3id.org/saref#StartCommand</a>
+<ul>
+<li><li>Added: DisjointClasses DisjointClasses(&lt;https://w3id.org/saref#StartCommand&gt; &lt;https://w3id.org/saref#StopCommand&gt;)</li>
+<li>Added: SubClass of https://w3id.org/saref#Command</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#GetCommand">https://w3id.org/saref#GetCommand</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#Command</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#Profile">https://w3id.org/saref#Profile</a>
+<ul>
+<li><li><li><li></ul>
+</li>
+<li><a href="#https://w3id.org/saref#SetRelativeLevelCommand">https://w3id.org/saref#SetRelativeLevelCommand</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#SetLevelCommand</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#TemperatureSensor">https://w3id.org/saref#TemperatureSensor</a>
+<ul>
+<li><li>Added: SubClass of https://w3id.org/saref#Sensor</li>
+<li><li><li></ul>
+</li>
+<li><a href="#https://w3id.org/saref#Occupancy">https://w3id.org/saref#Occupancy</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#Property</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#OpenCloseFunction">https://w3id.org/saref#OpenCloseFunction</a>
+<ul>
+<li><li>Added: SubClass of https://w3id.org/saref#ActuatingFunction</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#MultiLevelState">https://w3id.org/saref#MultiLevelState</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#State</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#UnitOfMeasure">https://w3id.org/saref#UnitOfMeasure</a>
+</li>
+<li><a href="#https://w3id.org/saref#Pressure">https://w3id.org/saref#Pressure</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#Property</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#Commodity">https://w3id.org/saref#Commodity</a>
+<ul>
+<li></ul>
+</li>
+<li><a href="#https://w3id.org/saref#FunctionRelated">https://w3id.org/saref#FunctionRelated</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#Device</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#Coal">https://w3id.org/saref#Coal</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#Commodity</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#StartStopFunction">https://w3id.org/saref#StartStopFunction</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#ActuatingFunction</li>
+<li></ul>
+</li>
+<li><a href="#https://w3id.org/saref#OpenCloseState">https://w3id.org/saref#OpenCloseState</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#State</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#OnOffFunction">https://w3id.org/saref#OnOffFunction</a>
+<ul>
+<li><li>Added: SubClass of https://w3id.org/saref#ActuatingFunction</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#Sensor">https://w3id.org/saref#Sensor</a>
+<ul>
+<li><li>Added: SubClass of https://w3id.org/saref#FunctionRelated</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#Energy">https://w3id.org/saref#Energy</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#Property</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#IlluminanceUnit">https://w3id.org/saref#IlluminanceUnit</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#UnitOfMeasure</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#LevelControlFunction">https://w3id.org/saref#LevelControlFunction</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#ActuatingFunction</li>
+<li></ul>
+</li>
+<li><a href="#https://w3id.org/saref#SetAbsoluteLevelCommand">https://w3id.org/saref#SetAbsoluteLevelCommand</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#SetLevelCommand</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#Light">https://w3id.org/saref#Light</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#Property</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#Task">https://w3id.org/saref#Task</a>
+<ul>
+<li></ul>
+</li>
+<li><a href="#https://w3id.org/saref#BuildingRelated">https://w3id.org/saref#BuildingRelated</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#Device</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#Time">https://w3id.org/saref#Time</a>
+<ul>
+<li><li>Added: SubClass of https://w3id.org/saref#Property</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#SmokeSensor">https://w3id.org/saref#SmokeSensor</a>
+<ul>
+<li><li><li><li><li><li>Added: SubClass of https://w3id.org/saref#Sensor</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#EnergyRelated">https://w3id.org/saref#EnergyRelated</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#Device</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#NotifyCommand">https://w3id.org/saref#NotifyCommand</a>
+<ul>
+<li>Added: SubClass of https://w3id.org/saref#Command</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#Meter">https://w3id.org/saref#Meter</a>
+<ul>
+<li><li>Added: SubClass of https://w3id.org/saref#FunctionRelated</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#CloseCommand">https://w3id.org/saref#CloseCommand</a>
+<ul>
+<li>Added: DisjointClasses DisjointClasses(&lt;https://w3id.org/saref#CloseCommand&gt; &lt;https://w3id.org/saref#OpenCommand&gt;)</li>
+<li><li>Added: SubClass of https://w3id.org/saref#Command</li>
+</ul>
+</li>
+</ul><h3 id="changeProp" class="list">Object Properties</h3>
+<p><u>Modified properties</u></p>
+<ul><li><a href="#http://www.w3.org/2006/time#intervalDisjoint">http://www.w3.org/2006/time#intervalDisjoint</a>
+<ul>
+<li>Added: <http://www.w3.org/2004/02/skos/core#note> "This interval relation is not included in the 13 basic relationships defined in Allen (1984), but is defined in (T.3) as the union of :intervalDuring v :intervalStarts v :intervalFinishes"@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "This interval relation is not included in the 13 basic relationships defined in Allen (1984), but is defined in (T.3) as the union of :intervalBefore v :intervalAfter . However, that is outside OWL2 expressivity, so is implemented as an explicit property, with :intervalBefore , :intervalAfter as sub-properties"@en</li>
+</ul>
+</li>
+<li><a href="#http://www.w3.org/2006/time#intervalIn">http://www.w3.org/2006/time#intervalIn</a>
+<ul>
+<li>Added: <http://www.w3.org/2004/02/skos/core#note> "This interval relation is not included in the 13 basic relationships defined in Allen (1984), but is referred to as 'an important relationship' in Allen and Ferguson (1997). It is the disjoint union of :intervalStarts v :intervalDuring v :intervalFinishes"@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "This interval relation is not included in the 13 basic relationships defined in Allen (1984), but is referred to as 'an important relationship' in Allen and Ferguson (1997). It is the disjoint union of :intervalStarts v :intervalDuring v :intervalFinishes . However, that is outside OWL2 expressivity, so is implemented as an explicit property, with :intervalStarts , :intervalDuring , :intervalFinishes as sub-properties"@en</li>
+</ul>
+</li>
+<li><a href="#http://www.w3.org/2006/time#timeZone">http://www.w3.org/2006/time#timeZone</a>
+<ul>
+<li>Added: <http://www.w3.org/2004/02/skos/core#note> "IANA maintains a database of timezones. These are well maintained and generally considered authoritative, but individual items are not available at individual URIs, so cannot be used directly in data expressed using OWL-Time.
+
+DBPedia provides a set of resources corresponding to the IANA timezones, with a URI for each (e.g. http://dbpedia.org/resource/Australia/Eucla). The World Clock service also provides a list of time zones with the description of each available as an individual webpage with a convenient individual URI (e.g. https://www.timeanddate.com/time/zones/acwst). These or other, similar, resources might be used as a value of the time:timeZone property."^^xsd:string</li>
+<li>Added: <http://www.w3.org/2004/02/skos/core#historyNote> "In the original 2006 version of OWL-Time, the range of time:timeZone was a TimeZone class in a separate namespace \"http://www.w3.org/2006/timezone#\". 
+An alignment axiom 
+	tzont:TimeZone rdfs:subClassOf time:TimeZone . 
+allows data encoded according to the previous version to be consistent with the updated ontology. "^^xsd:string</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#historyNote> "In the original 2006 version of OWL-Time, the range of time:timeZone was a TimeZone class in a separate namespace \"http://www.w3.org/2006/timezone#\". 
+An alignment axiom 
+	tzont:TimeZone rdfs:subClassOf time:TimeZone . 
+allows data encoded according to the previous version to be consistent with the updated ontology. "^^xsd:string</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#note> "IANA maintains a database of timezones. These are well maintained and generally considered authoritative, but individual items are not available at individual URIs, so cannot be used directly in data expressed using OWL-Time.
+
+DBPedia provides a set of resources corresponding to the IANA timezones, with a URI for each (e.g. http://dbpedia.org/resource/Australia/Eucla). The World Clock service also provides a list of time zones with the description of each available as an individual webpage with a convenient individual URI (e.g. https://www.timeanddate.com/time/zones/acwst). These or other, similar, resources might be used as a value of the time:timeZone property."^^xsd:string</li>
+</ul>
+</li>
+</ul><p><u>Added properties</u></p>
+<ul><li><a href="#https://w3id.org/saref#hasMeterReadingType">https://w3id.org/saref#hasMeterReadingType</a>
+</li>
+<li><a href="#https://w3id.org/saref#hasSensorType">https://w3id.org/saref#hasSensorType</a>
+</li>
+<li><a href="#https://w3id.org/saref#relatesToMeasurement">https://w3id.org/saref#relatesToMeasurement</a>
+</li>
+<li><a href="#https://w3id.org/saref#hasMeterReading">https://w3id.org/saref#hasMeterReading</a>
+</li>
+<li><a href="#https://w3id.org/saref#isAbout">https://w3id.org/saref#isAbout</a>
+</li>
+<li><a href="#https://w3id.org/saref#actsUpon">https://w3id.org/saref#actsUpon</a>
+</li>
+<li><a href="#https://w3id.org/saref#isOfferedBy">https://w3id.org/saref#isOfferedBy</a>
+<ul>
+<li>Added: InverseObjectProperties InverseObjectProperties(&lt;https://w3id.org/saref#isOfferedBy&gt; &lt;https://w3id.org/saref#offers&gt;)</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#isControlledByDevice">https://w3id.org/saref#isControlledByDevice</a>
+</li>
+<li><a href="#https://w3id.org/saref#consistsOf">https://w3id.org/saref#consistsOf</a>
+</li>
+<li><a href="#https://w3id.org/saref#hasThresholdMeasurement">https://w3id.org/saref#hasThresholdMeasurement</a>
+</li>
+<li><a href="#https://w3id.org/saref#hasCommand">https://w3id.org/saref#hasCommand</a>
+<ul>
+<li>Added: InverseObjectProperties InverseObjectProperties(&lt;https://w3id.org/saref#hasCommand&gt; &lt;https://w3id.org/saref#isCommandOf&gt;)</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#controlsProperty">https://w3id.org/saref#controlsProperty</a>
+</li>
+<li><a href="#https://w3id.org/saref#isUsedFor">https://w3id.org/saref#isUsedFor</a>
+</li>
+<li><a href="#https://w3id.org/saref#accomplishes">https://w3id.org/saref#accomplishes</a>
+<ul>
+<li>Added: InverseObjectProperties InverseObjectProperties(&lt;https://w3id.org/saref#accomplishes&gt; &lt;https://w3id.org/saref#isAccomplishedBy&gt;)</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#measuresProperty">https://w3id.org/saref#measuresProperty</a>
+</li>
+<li><a href="#https://w3id.org/saref#represents">https://w3id.org/saref#represents</a>
+</li>
+<li><a href="#https://w3id.org/saref#relatesToProperty">https://w3id.org/saref#relatesToProperty</a>
+</li>
+<li><a href="#https://w3id.org/saref#offers">https://w3id.org/saref#offers</a>
+<ul>
+<li>Added: InverseObjectProperties InverseObjectProperties(&lt;https://w3id.org/saref#isOfferedBy&gt; &lt;https://w3id.org/saref#offers&gt;)</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#hasTypicalConsumption">https://w3id.org/saref#hasTypicalConsumption</a>
+</li>
+<li><a href="#https://w3id.org/saref#isAccomplishedBy">https://w3id.org/saref#isAccomplishedBy</a>
+<ul>
+<li>Added: InverseObjectProperties InverseObjectProperties(&lt;https://w3id.org/saref#accomplishes&gt; &lt;https://w3id.org/saref#isAccomplishedBy&gt;)</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#isMeasuredByDevice">https://w3id.org/saref#isMeasuredByDevice</a>
+</li>
+<li><a href="#https://w3id.org/saref#hasFunction">https://w3id.org/saref#hasFunction</a>
+</li>
+<li><a href="#https://w3id.org/saref#isMeasuredIn">https://w3id.org/saref#isMeasuredIn</a>
+</li>
+<li><a href="#https://w3id.org/saref#hasPrice">https://w3id.org/saref#hasPrice</a>
+</li>
+<li><a href="#https://w3id.org/saref#hasSensingRange">https://w3id.org/saref#hasSensingRange</a>
+</li>
+<li><a href="#https://w3id.org/saref#hasTime">https://w3id.org/saref#hasTime</a>
+</li>
+<li><a href="#https://w3id.org/saref#makesMeasurement">https://w3id.org/saref#makesMeasurement</a>
+</li>
+<li><a href="#https://w3id.org/saref#isCommandOf">https://w3id.org/saref#isCommandOf</a>
+<ul>
+<li>Added: InverseObjectProperties InverseObjectProperties(&lt;https://w3id.org/saref#hasCommand&gt; &lt;https://w3id.org/saref#isCommandOf&gt;)</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#hasState">https://w3id.org/saref#hasState</a>
+</li>
+<li><a href="#https://w3id.org/saref#hasProfile">https://w3id.org/saref#hasProfile</a>
+</li>
+</ul><h3 id="changeDataProp" class="list">Data Properties</h3>
+<p><u>Modified data properties</u></p>
+<ul><li><a href="#http://www.w3.org/2006/time#month">http://www.w3.org/2006/time#month</a>
+<ul>
+<li>Added: <http://www.w3.org/2004/02/skos/core#definition> "Month position in a calendar-clock system.
+
+The range of this property is not specified, so can be replaced by any specific representation of a calendar month from any calendar. "@en</li>
+<li>Added: rdfs:comment "Month position in a calendar-clock system.
+
+The range of this property is not specified, so can be replaced by any specific representation of a calendar month from any calendar. "@en</li>
+</ul>
+<ul>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Month position in a calendar-clock system.
+
+The range of this property is not specified, so can be replaced by any specific representation of a calendar month from any calendar. "@en</li>
+<li>Deleted: rdfs:comment "Month position in a calendar-clock system.
+
+The range of this property is not specified, so can be replaced by any specific representation of a calendar month from any calendar. "@en</li>
+</ul>
+</li>
+<li><a href="#http://www.w3.org/2006/time#year">http://www.w3.org/2006/time#year</a>
+<ul>
+<li>Added: rdfs:comment "Year position in a calendar-clock system.
+
+The range of this property is not specified, so can be replaced by any specific representation of a calendar year from any calendar. "@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Year position in a calendar-clock system.
+
+The range of this property is not specified, so can be replaced by any specific representation of a calendar year from any calendar. "@en</li>
+</ul>
+</li>
+<li><a href="#http://www.w3.org/2006/time#day">http://www.w3.org/2006/time#day</a>
+<ul>
+<li>Added: <http://www.w3.org/2004/02/skos/core#definition> "Day position in a calendar-clock system.
+
+The range of this property is not specified, so can be replaced by any specific representation of a calendar day from any calendar. "@en</li>
+<li>Added: rdfs:comment "Day position in a calendar-clock system.
+
+The range of this property is not specified, so can be replaced by any specific representation of a calendar day from any calendar. "@en</li>
+</ul>
+<ul>
+<li>Deleted: rdfs:comment "Day position in a calendar-clock system.
+
+The range of this property is not specified, so can be replaced by any specific representation of a calendar day from any calendar. "@en</li>
+<li>Deleted: <http://www.w3.org/2004/02/skos/core#definition> "Day position in a calendar-clock system.
+
+The range of this property is not specified, so can be replaced by any specific representation of a calendar day from any calendar. "@en</li>
+</ul>
+</li>
+</ul><p><u>Added data properties</u></p>
+<ul><li><a href="#https://w3id.org/saref#hasTimestamp">https://w3id.org/saref#hasTimestamp</a>
+</li>
+<li><a href="#https://w3id.org/saref#hasManufacturer">https://w3id.org/saref#hasManufacturer</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#hasModel">https://w3id.org/saref#hasModel</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#hasName">https://w3id.org/saref#hasName</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+</ul>
+</li>
+<li><a href="#https://w3id.org/saref#hasValue">https://w3id.org/saref#hasValue</a>
+</li>
+<li><a href="#https://w3id.org/saref#hasDescription">https://w3id.org/saref#hasDescription</a>
+<ul>
+<li>Added: Range http://www.w3.org/2001/XMLSchema#string</li>
+</ul>
+</li>
+</ul></div>

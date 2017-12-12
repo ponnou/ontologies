@@ -1,0 +1,802 @@
+{
+  "@context" : {
+    "actsUpon" : {
+      "@id" : "https://w3id.org/saref#actsUpon",
+      "@type" : "@id"
+    },
+    "Switch" : {
+      "@id" : "https://w3id.org/saref#Switch"
+    },
+    "UnitOfMeasure" : {
+      "@id" : "https://w3id.org/saref#UnitOfMeasure"
+    },
+    "scopeNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#scopeNote"
+    },
+    "hasManufacturer" : {
+      "@id" : "https://w3id.org/saref#hasManufacturer",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "hasPrice" : {
+      "@id" : "https://w3id.org/saref#hasPrice",
+      "@type" : "@id"
+    },
+    "NotifyCommand" : {
+      "@id" : "https://w3id.org/saref#NotifyCommand"
+    },
+    "DateTimeDescription" : {
+      "@id" : "http://www.w3.org/2006/time#DateTimeDescription"
+    },
+    "Meter" : {
+      "@id" : "https://w3id.org/saref#Meter"
+    },
+    "intervalFinishes" : {
+      "@id" : "http://www.w3.org/2006/time#intervalFinishes",
+      "@type" : "@id"
+    },
+    "isControlledByDevice" : {
+      "@id" : "https://w3id.org/saref#isControlledByDevice",
+      "@type" : "@id"
+    },
+    "isVersionOf" : {
+      "@id" : "http://purl.org/dc/terms/isVersionOf"
+    },
+    "EnergyUnit" : {
+      "@id" : "https://w3id.org/saref#EnergyUnit"
+    },
+    "Storage" : {
+      "@id" : "https://w3id.org/saref#Storage"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "Commodity" : {
+      "@id" : "https://w3id.org/saref#Commodity"
+    },
+    "created" : {
+      "@id" : "http://purl.org/dc/terms/created"
+    },
+    "hasTRS" : {
+      "@id" : "http://www.w3.org/2006/time#hasTRS",
+      "@type" : "@id"
+    },
+    "Humidity" : {
+      "@id" : "https://w3id.org/saref#Humidity"
+    },
+    "hasModel" : {
+      "@id" : "https://w3id.org/saref#hasModel",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "inXSDgYear" : {
+      "@id" : "http://www.w3.org/2006/time#inXSDgYear",
+      "@type" : "http://www.w3.org/2001/XMLSchema#gYear"
+    },
+    "TimePosition" : {
+      "@id" : "http://www.w3.org/2006/time#TimePosition"
+    },
+    "SmokeSensor" : {
+      "@id" : "https://w3id.org/saref#SmokeSensor"
+    },
+    "license" : {
+      "@id" : "http://purl.org/dc/terms/license"
+    },
+    "MeteringFunction" : {
+      "@id" : "https://w3id.org/saref#MeteringFunction"
+    },
+    "hasDurationDescription" : {
+      "@id" : "http://www.w3.org/2006/time#hasDurationDescription",
+      "@type" : "@id"
+    },
+    "TemporalDuration" : {
+      "@id" : "http://www.w3.org/2006/time#TemporalDuration"
+    },
+    "dayOfWeek" : {
+      "@id" : "http://www.w3.org/2006/time#dayOfWeek",
+      "@type" : "@id"
+    },
+    "DayOfWeek" : {
+      "@id" : "http://www.w3.org/2006/time#DayOfWeek"
+    },
+    "hasThresholdMeasurement" : {
+      "@id" : "https://w3id.org/saref#hasThresholdMeasurement",
+      "@type" : "@id"
+    },
+    "intervalMeets" : {
+      "@id" : "http://www.w3.org/2006/time#intervalMeets",
+      "@type" : "@id"
+    },
+    "DurationDescription" : {
+      "@id" : "http://www.w3.org/2006/time#DurationDescription"
+    },
+    "accomplishes" : {
+      "@id" : "https://w3id.org/saref#accomplishes",
+      "@type" : "@id"
+    },
+    "after" : {
+      "@id" : "http://www.w3.org/2006/time#after",
+      "@type" : "@id"
+    },
+    "issued" : {
+      "@id" : "http://purl.org/dc/terms/issued"
+    },
+    "Thing" : {
+      "@id" : "http://www.w3.org/2002/07/owl#Thing"
+    },
+    "CloseCommand" : {
+      "@id" : "https://w3id.org/saref#CloseCommand"
+    },
+    "GeneralDateTimeDescription" : {
+      "@id" : "http://www.w3.org/2006/time#GeneralDateTimeDescription"
+    },
+    "intervalOverlappedBy" : {
+      "@id" : "http://www.w3.org/2006/time#intervalOverlappedBy",
+      "@type" : "@id"
+    },
+    "TemporalUnit" : {
+      "@id" : "http://www.w3.org/2006/time#TemporalUnit"
+    },
+    "OffState" : {
+      "@id" : "https://w3id.org/saref#OffState"
+    },
+    "hasName" : {
+      "@id" : "https://w3id.org/saref#hasName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "priorVersion" : {
+      "@id" : "http://www.w3.org/2002/07/owl#priorVersion"
+    },
+    "intervalContains" : {
+      "@id" : "http://www.w3.org/2006/time#intervalContains",
+      "@type" : "@id"
+    },
+    "isOfferedBy" : {
+      "@id" : "https://w3id.org/saref#isOfferedBy",
+      "@type" : "@id"
+    },
+    "generalYear" : {
+      "@id" : "http://www.w3.org/2006/time#generalYear"
+    },
+    "measuresProperty" : {
+      "@id" : "https://w3id.org/saref#measuresProperty",
+      "@type" : "@id"
+    },
+    "hours" : {
+      "@id" : "http://www.w3.org/2006/time#hours",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "PressureUnit" : {
+      "@id" : "https://w3id.org/saref#PressureUnit"
+    },
+    "Generator" : {
+      "@id" : "https://w3id.org/saref#Generator"
+    },
+    "hasValue" : {
+      "@id" : "https://w3id.org/saref#hasValue"
+    },
+    "Instant" : {
+      "@id" : "http://www.w3.org/2006/time#Instant"
+    },
+    "Motion" : {
+      "@id" : "https://w3id.org/saref#Motion"
+    },
+    "hasMeterReadingType" : {
+      "@id" : "https://w3id.org/saref#hasMeterReadingType",
+      "@type" : "@id"
+    },
+    "Appliance" : {
+      "@id" : "https://w3id.org/saref#Appliance"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "GetMeterDataCommand" : {
+      "@id" : "https://w3id.org/saref#GetMeterDataCommand"
+    },
+    "TimeZone" : {
+      "@id" : "http://www.w3.org/2006/time#TimeZone"
+    },
+    "historyNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#historyNote"
+    },
+    "months" : {
+      "@id" : "http://www.w3.org/2006/time#months",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "OnCommand" : {
+      "@id" : "https://w3id.org/saref#OnCommand"
+    },
+    "second" : {
+      "@id" : "http://www.w3.org/2006/time#second",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "inXSDDateTime" : {
+      "@id" : "http://www.w3.org/2006/time#inXSDDateTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "Measurement" : {
+      "@id" : "https://w3id.org/saref#Measurement"
+    },
+    "StepUpCommand" : {
+      "@id" : "https://w3id.org/saref#StepUpCommand"
+    },
+    "Multimedia" : {
+      "@id" : "https://w3id.org/saref#Multimedia"
+    },
+    "timeZone" : {
+      "@id" : "http://www.w3.org/2006/time#timeZone",
+      "@type" : "@id"
+    },
+    "LightingDevice" : {
+      "@id" : "https://w3id.org/saref#LightingDevice"
+    },
+    "OnState" : {
+      "@id" : "https://w3id.org/saref#OnState"
+    },
+    "hasCommand" : {
+      "@id" : "https://w3id.org/saref#hasCommand",
+      "@type" : "@id"
+    },
+    "Gas" : {
+      "@id" : "https://w3id.org/saref#Gas"
+    },
+    "Light" : {
+      "@id" : "https://w3id.org/saref#Light"
+    },
+    "numericDuration" : {
+      "@id" : "http://www.w3.org/2006/time#numericDuration",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "Temperature" : {
+      "@id" : "https://w3id.org/saref#Temperature"
+    },
+    "SetLevelCommand" : {
+      "@id" : "https://w3id.org/saref#SetLevelCommand"
+    },
+    "isAccomplishedBy" : {
+      "@id" : "https://w3id.org/saref#isAccomplishedBy",
+      "@type" : "@id"
+    },
+    "PowerUnit" : {
+      "@id" : "https://w3id.org/saref#PowerUnit"
+    },
+    "hour" : {
+      "@id" : "http://www.w3.org/2006/time#hour",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "xsdDateTime" : {
+      "@id" : "http://www.w3.org/2006/time#xsdDateTime",
+      "@type" : "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "note" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#note"
+    },
+    "DateTimeInterval" : {
+      "@id" : "http://www.w3.org/2006/time#DateTimeInterval"
+    },
+    "hasDuration" : {
+      "@id" : "http://www.w3.org/2006/time#hasDuration",
+      "@type" : "@id"
+    },
+    "Price" : {
+      "@id" : "https://w3id.org/saref#Price"
+    },
+    "Interval" : {
+      "@id" : "http://www.w3.org/2006/time#Interval"
+    },
+    "TRS" : {
+      "@id" : "http://www.w3.org/2006/time#TRS"
+    },
+    "LevelControlFunction" : {
+      "@id" : "https://w3id.org/saref#LevelControlFunction"
+    },
+    "TemporalPosition" : {
+      "@id" : "http://www.w3.org/2006/time#TemporalPosition"
+    },
+    "OpenCommand" : {
+      "@id" : "https://w3id.org/saref#OpenCommand"
+    },
+    "HVAC" : {
+      "@id" : "https://w3id.org/saref#HVAC"
+    },
+    "monthOfYear" : {
+      "@id" : "http://www.w3.org/2006/time#monthOfYear",
+      "@type" : "@id"
+    },
+    "creator" : {
+      "@id" : "http://purl.org/dc/terms/creator"
+    },
+    "GetSensingDataCommand" : {
+      "@id" : "https://w3id.org/saref#GetSensingDataCommand"
+    },
+    "hasTemporalDuration" : {
+      "@id" : "http://www.w3.org/2006/time#hasTemporalDuration",
+      "@type" : "@id"
+    },
+    "Energy" : {
+      "@id" : "https://w3id.org/saref#Energy"
+    },
+    "OnOffState" : {
+      "@id" : "https://w3id.org/saref#OnOffState"
+    },
+    "Water" : {
+      "@id" : "https://w3id.org/saref#Water"
+    },
+    "GetCurrentMeterValueCommand" : {
+      "@id" : "https://w3id.org/saref#GetCurrentMeterValueCommand"
+    },
+    "Electricity" : {
+      "@id" : "https://w3id.org/saref#Electricity"
+    },
+    "StartState" : {
+      "@id" : "https://w3id.org/saref#StartState"
+    },
+    "intervalAfter" : {
+      "@id" : "http://www.w3.org/2006/time#intervalAfter",
+      "@type" : "@id"
+    },
+    "hasTime" : {
+      "@id" : "http://www.w3.org/2006/time#hasTime",
+      "@type" : "@id"
+    },
+    "OpenCloseFunction" : {
+      "@id" : "https://w3id.org/saref#OpenCloseFunction"
+    },
+    "numericPosition" : {
+      "@id" : "http://www.w3.org/2006/time#numericPosition",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "StepDownCommand" : {
+      "@id" : "https://w3id.org/saref#StepDownCommand"
+    },
+    "ActuatingFunction" : {
+      "@id" : "https://w3id.org/saref#ActuatingFunction"
+    },
+    "GetCommand" : {
+      "@id" : "https://w3id.org/saref#GetCommand"
+    },
+    "intervalOverlaps" : {
+      "@id" : "http://www.w3.org/2006/time#intervalOverlaps",
+      "@type" : "@id"
+    },
+    "CloseState" : {
+      "@id" : "https://w3id.org/saref#CloseState"
+    },
+    "hasEnd" : {
+      "@id" : "http://www.w3.org/2006/time#hasEnd",
+      "@type" : "@id"
+    },
+    "rights" : {
+      "@id" : "http://purl.org/dc/terms/rights"
+    },
+    "intervalDuring" : {
+      "@id" : "http://www.w3.org/2006/time#intervalDuring",
+      "@type" : "@id"
+    },
+    "minutes" : {
+      "@id" : "http://www.w3.org/2006/time#minutes",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "StopState" : {
+      "@id" : "https://w3id.org/saref#StopState"
+    },
+    "TemporalEntity" : {
+      "@id" : "http://www.w3.org/2006/time#TemporalEntity"
+    },
+    "hasBeginning" : {
+      "@id" : "http://www.w3.org/2006/time#hasBeginning",
+      "@type" : "@id"
+    },
+    "Profile" : {
+      "@id" : "https://w3id.org/saref#Profile"
+    },
+    "isAbout" : {
+      "@id" : "https://w3id.org/saref#isAbout",
+      "@type" : "@id"
+    },
+    "MicroRenewable" : {
+      "@id" : "https://w3id.org/saref#MicroRenewable"
+    },
+    "Pressure" : {
+      "@id" : "https://w3id.org/saref#Pressure"
+    },
+    "ProperInterval" : {
+      "@id" : "http://www.w3.org/2006/time#ProperInterval"
+    },
+    "EnergyRelated" : {
+      "@id" : "https://w3id.org/saref#EnergyRelated"
+    },
+    "intervalMetBy" : {
+      "@id" : "http://www.w3.org/2006/time#intervalMetBy",
+      "@type" : "@id"
+    },
+    "seconds" : {
+      "@id" : "http://www.w3.org/2006/time#seconds",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "Network" : {
+      "@id" : "https://w3id.org/saref#Network"
+    },
+    "relatesToMeasurement" : {
+      "@id" : "https://w3id.org/saref#relatesToMeasurement",
+      "@type" : "@id"
+    },
+    "OpenCloseState" : {
+      "@id" : "https://w3id.org/saref#OpenCloseState"
+    },
+    "dateTimeStamp" : {
+      "@id" : "http://www.w3.org/2001/XMLSchema#dateTimeStamp"
+    },
+    "OffCommand" : {
+      "@id" : "https://w3id.org/saref#OffCommand"
+    },
+    "GeneralDurationDescription" : {
+      "@id" : "http://www.w3.org/2006/time#GeneralDurationDescription"
+    },
+    "deprecated" : {
+      "@id" : "http://www.w3.org/2002/07/owl#deprecated"
+    },
+    "isMeasuredByDevice" : {
+      "@id" : "https://w3id.org/saref#isMeasuredByDevice",
+      "@type" : "@id"
+    },
+    "week" : {
+      "@id" : "http://www.w3.org/2006/time#week",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "inXSDgYearMonth" : {
+      "@id" : "http://www.w3.org/2006/time#inXSDgYearMonth",
+      "@type" : "http://www.w3.org/2001/XMLSchema#gYearMonth"
+    },
+    "Duration" : {
+      "@id" : "http://www.w3.org/2006/time#Duration"
+    },
+    "hasDateTimeDescription" : {
+      "@id" : "http://www.w3.org/2006/time#hasDateTimeDescription",
+      "@type" : "@id"
+    },
+    "hasTypicalConsumption" : {
+      "@id" : "https://w3id.org/saref#hasTypicalConsumption",
+      "@type" : "@id"
+    },
+    "years" : {
+      "@id" : "http://www.w3.org/2006/time#years",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "intervalFinishedBy" : {
+      "@id" : "http://www.w3.org/2006/time#intervalFinishedBy",
+      "@type" : "@id"
+    },
+    "inTemporalPosition" : {
+      "@id" : "http://www.w3.org/2006/time#inTemporalPosition",
+      "@type" : "@id"
+    },
+    "isDefinedBy" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#isDefinedBy"
+    },
+    "definition" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#definition"
+    },
+    "editorialNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#editorialNote"
+    },
+    "makesMeasurement" : {
+      "@id" : "https://w3id.org/saref#makesMeasurement",
+      "@type" : "@id"
+    },
+    "inDateTime" : {
+      "@id" : "http://www.w3.org/2006/time#inDateTime",
+      "@type" : "@id"
+    },
+    "SensingFunction" : {
+      "@id" : "https://w3id.org/saref#SensingFunction"
+    },
+    "DoorSwitch" : {
+      "@id" : "https://w3id.org/saref#DoorSwitch"
+    },
+    "SetAbsoluteLevelCommand" : {
+      "@id" : "https://w3id.org/saref#SetAbsoluteLevelCommand"
+    },
+    "represents" : {
+      "@id" : "https://w3id.org/saref#represents",
+      "@type" : "@id"
+    },
+    "GetMeterHistoryCommand" : {
+      "@id" : "https://w3id.org/saref#GetMeterHistoryCommand"
+    },
+    "StopCommand" : {
+      "@id" : "https://w3id.org/saref#StopCommand"
+    },
+    "StartStopState" : {
+      "@id" : "https://w3id.org/saref#StartStopState"
+    },
+    "Property" : {
+      "@id" : "https://w3id.org/saref#Property"
+    },
+    "hasFunction" : {
+      "@id" : "https://w3id.org/saref#hasFunction",
+      "@type" : "@id"
+    },
+    "title" : {
+      "@id" : "http://purl.org/dc/terms/title"
+    },
+    "Command" : {
+      "@id" : "https://w3id.org/saref#Command"
+    },
+    "year" : {
+      "@id" : "http://www.w3.org/2006/time#year"
+    },
+    "days" : {
+      "@id" : "http://www.w3.org/2006/time#days",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "inXSDDateTimeStamp" : {
+      "@id" : "http://www.w3.org/2006/time#inXSDDateTimeStamp"
+    },
+    "SwitchOnService" : {
+      "@id" : "https://w3id.org/saref#SwitchOnService"
+    },
+    "isUsedFor" : {
+      "@id" : "https://w3id.org/saref#isUsedFor",
+      "@type" : "@id"
+    },
+    "source" : {
+      "@id" : "http://purl.org/dc/terms/source"
+    },
+    "Occupancy" : {
+      "@id" : "https://w3id.org/saref#Occupancy"
+    },
+    "TemperatureSensor" : {
+      "@id" : "https://w3id.org/saref#TemperatureSensor"
+    },
+    "pattern" : {
+      "@id" : "http://www.w3.org/2001/XMLSchema#pattern"
+    },
+    "LightSwitch" : {
+      "@id" : "https://w3id.org/saref#LightSwitch"
+    },
+    "changeNote" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#changeNote"
+    },
+    "PauseCommand" : {
+      "@id" : "https://w3id.org/saref#PauseCommand"
+    },
+    "isMeasuredIn" : {
+      "@id" : "https://w3id.org/saref#isMeasuredIn",
+      "@type" : "@id"
+    },
+    "publisher" : {
+      "@id" : "http://purl.org/dc/terms/publisher"
+    },
+    "Coal" : {
+      "@id" : "https://w3id.org/saref#Coal"
+    },
+    "Smoke" : {
+      "@id" : "https://w3id.org/saref#Smoke"
+    },
+    "Load" : {
+      "@id" : "https://w3id.org/saref#Load"
+    },
+    "hasMeterReading" : {
+      "@id" : "https://w3id.org/saref#hasMeterReading",
+      "@type" : "@id"
+    },
+    "inTimePosition" : {
+      "@id" : "http://www.w3.org/2006/time#inTimePosition",
+      "@type" : "@id"
+    },
+    "consistsOf" : {
+      "@id" : "https://w3id.org/saref#consistsOf",
+      "@type" : "@id"
+    },
+    "modified" : {
+      "@id" : "http://purl.org/dc/terms/modified"
+    },
+    "Year" : {
+      "@id" : "http://www.w3.org/2006/time#Year"
+    },
+    "SetRelativeLevelCommand" : {
+      "@id" : "https://w3id.org/saref#SetRelativeLevelCommand"
+    },
+    "inside" : {
+      "@id" : "http://www.w3.org/2006/time#inside",
+      "@type" : "@id"
+    },
+    "EventFunction" : {
+      "@id" : "https://w3id.org/saref#EventFunction"
+    },
+    "WashingMachine" : {
+      "@id" : "https://w3id.org/saref#WashingMachine"
+    },
+    "isCommandOf" : {
+      "@id" : "https://w3id.org/saref#isCommandOf",
+      "@type" : "@id"
+    },
+    "minute" : {
+      "@id" : "http://www.w3.org/2006/time#minute",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    },
+    "BuildingRelated" : {
+      "@id" : "https://w3id.org/saref#BuildingRelated"
+    },
+    "hasSensingRange" : {
+      "@id" : "https://w3id.org/saref#hasSensingRange",
+      "@type" : "@id"
+    },
+    "MultiLevelState" : {
+      "@id" : "https://w3id.org/saref#MultiLevelState"
+    },
+    "TemperatureUnit" : {
+      "@id" : "https://w3id.org/saref#TemperatureUnit"
+    },
+    "seeAlso" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#seeAlso"
+    },
+    "hasSensorType" : {
+      "@id" : "https://w3id.org/saref#hasSensorType",
+      "@type" : "@id"
+    },
+    "StartStopFunction" : {
+      "@id" : "https://w3id.org/saref#StartStopFunction"
+    },
+    "hasState" : {
+      "@id" : "https://w3id.org/saref#hasState",
+      "@type" : "@id"
+    },
+    "State" : {
+      "@id" : "https://w3id.org/saref#State"
+    },
+    "intervalBefore" : {
+      "@id" : "http://www.w3.org/2006/time#intervalBefore",
+      "@type" : "@id"
+    },
+    "Resource" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Resource"
+    },
+    "hasProfile" : {
+      "@id" : "https://w3id.org/saref#hasProfile",
+      "@type" : "@id"
+    },
+    "relatesToProperty" : {
+      "@id" : "https://w3id.org/saref#relatesToProperty",
+      "@type" : "@id"
+    },
+    "OnOffFunction" : {
+      "@id" : "https://w3id.org/saref#OnOffFunction"
+    },
+    "month" : {
+      "@id" : "http://www.w3.org/2006/time#month"
+    },
+    "weeks" : {
+      "@id" : "http://www.w3.org/2006/time#weeks",
+      "@type" : "http://www.w3.org/2001/XMLSchema#decimal"
+    },
+    "MonthOfYear" : {
+      "@id" : "http://www.w3.org/2006/time#MonthOfYear"
+    },
+    "Function" : {
+      "@id" : "https://w3id.org/saref#Function"
+    },
+    "Actuator" : {
+      "@id" : "https://w3id.org/saref#Actuator"
+    },
+    "Currency" : {
+      "@id" : "https://w3id.org/saref#Currency"
+    },
+    "IlluminanceUnit" : {
+      "@id" : "https://w3id.org/saref#IlluminanceUnit"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "Service" : {
+      "@id" : "https://w3id.org/saref#Service"
+    },
+    "day" : {
+      "@id" : "http://www.w3.org/2006/time#day"
+    },
+    "controlsProperty" : {
+      "@id" : "https://w3id.org/saref#controlsProperty",
+      "@type" : "@id"
+    },
+    "intervalEquals" : {
+      "@id" : "http://www.w3.org/2006/time#intervalEquals",
+      "@type" : "@id"
+    },
+    "before" : {
+      "@id" : "http://www.w3.org/2006/time#before",
+      "@type" : "@id"
+    },
+    "contributor" : {
+      "@id" : "http://purl.org/dc/terms/contributor"
+    },
+    "January" : {
+      "@id" : "http://www.w3.org/2006/time#January"
+    },
+    "EnergyMeter" : {
+      "@id" : "https://w3id.org/saref#EnergyMeter"
+    },
+    "OpenState" : {
+      "@id" : "https://w3id.org/saref#OpenState"
+    },
+    "StartCommand" : {
+      "@id" : "https://w3id.org/saref#StartCommand"
+    },
+    "ToggleCommand" : {
+      "@id" : "https://w3id.org/saref#ToggleCommand"
+    },
+    "hasXSDDuration" : {
+      "@id" : "http://www.w3.org/2006/time#hasXSDDuration",
+      "@type" : "http://www.w3.org/2001/XMLSchema#duration"
+    },
+    "Device" : {
+      "@id" : "https://w3id.org/saref#Device"
+    },
+    "intervalStarts" : {
+      "@id" : "http://www.w3.org/2006/time#intervalStarts",
+      "@type" : "@id"
+    },
+    "FunctionRelated" : {
+      "@id" : "https://w3id.org/saref#FunctionRelated"
+    },
+    "intervalIn" : {
+      "@id" : "http://www.w3.org/2006/time#intervalIn",
+      "@type" : "@id"
+    },
+    "hasDescription" : {
+      "@id" : "https://w3id.org/saref#hasDescription",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "inXSDDate" : {
+      "@id" : "http://www.w3.org/2006/time#inXSDDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "hasTimestamp" : {
+      "@id" : "https://w3id.org/saref#hasTimestamp"
+    },
+    "Literal" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#Literal"
+    },
+    "Power" : {
+      "@id" : "https://w3id.org/saref#Power"
+    },
+    "Task" : {
+      "@id" : "https://w3id.org/saref#Task"
+    },
+    "prefLabel" : {
+      "@id" : "http://www.w3.org/2004/02/skos/core#prefLabel"
+    },
+    "intervalStartedBy" : {
+      "@id" : "http://www.w3.org/2006/time#intervalStartedBy",
+      "@type" : "@id"
+    },
+    "description" : {
+      "@id" : "http://purl.org/dc/terms/description"
+    },
+    "Time" : {
+      "@id" : "https://w3id.org/saref#Time"
+    },
+    "nominalPosition" : {
+      "@id" : "http://www.w3.org/2006/time#nominalPosition",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "offers" : {
+      "@id" : "https://w3id.org/saref#offers",
+      "@type" : "@id"
+    },
+    "intervalDisjoint" : {
+      "@id" : "http://www.w3.org/2006/time#intervalDisjoint",
+      "@type" : "@id"
+    },
+    "Sensor" : {
+      "@id" : "https://w3id.org/saref#Sensor"
+    },
+    "unitType" : {
+      "@id" : "http://www.w3.org/2006/time#unitType",
+      "@type" : "@id"
+    },
+    "dayOfYear" : {
+      "@id" : "http://www.w3.org/2006/time#dayOfYear",
+      "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger"
+    }
+  }
+}
