@@ -1,0 +1,58 @@
+{
+  "@context" : {
+    "EnterpriseServer" : {
+      "@id" : "http://www.semanticweb.org/sesa443818#EnterpriseServer"
+    },
+    "hasClassId" : {
+      "@id" : "http://www.semanticweb.org/sesa443818#hasClassId"
+    },
+    "AutomationServer" : {
+      "@id" : "http://www.semanticweb.org/sesa443818#AutomationServer"
+    },
+    "connectsToP" : {
+      "@id" : "http://www.semanticweb.org/sesa443818#connectsToP",
+      "@type" : "@id"
+    },
+    "topDataProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topDataProperty"
+    },
+    "Source" : {
+      "@id" : "http://www.semanticweb.org/sesa443818#Source"
+    },
+    "hasName" : {
+      "@id" : "http://www.semanticweb.org/sesa443818#hasName"
+    },
+    "connectsToAS" : {
+      "@id" : "http://www.semanticweb.org/sesa443818#connectsToAS",
+      "@type" : "@id"
+    },
+    "hasType" : {
+      "@id" : "http://www.semanticweb.org/sesa443818#hasType"
+    },
+    "topObjectProperty" : {
+      "@id" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+      "@type" : "@id"
+    },
+    "connectsToC" : {
+      "@id" : "http://www.semanticweb.org/sesa443818#connectsToC",
+      "@type" : "@id"
+    },
+    "Point" : {
+      "@id" : "http://www.semanticweb.org/sesa443818#Point"
+    },
+    "connectsTo" : {
+      "@id" : "http://www.semanticweb.org/sesa443818#connectsTo",
+      "@type" : "@id"
+    },
+    "isConnectedBy" : {
+      "@id" : "http://www.semanticweb.org/sesa443818#isConnectedBy",
+      "@type" : "@id"
+    },
+    "hasUnit" : {
+      "@id" : "http://www.semanticweb.org/sesa443818#hasUnit"
+    },
+    "Controller" : {
+      "@id" : "http://www.semanticweb.org/sesa443818#Controller"
+    }
+  }
+}

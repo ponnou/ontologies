@@ -1,0 +1,10 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; "base:Source" "base:Point" "base:EnterpriseServer" "base:Controller" "base:AutomationServer" ; /*classes style*/
+	"base:EnterpriseServer" -> "base:Source" [ label = "rdfs:subClassOf" ];
+	"base:Point" -> "base:Source" [ label = "rdfs:subClassOf" ];
+	"base:AutomationServer" -> "base:Source" [ label = "rdfs:subClassOf" ];
+	"base:Controller" -> "base:Source" [ label = "rdfs:subClassOf" ];
+
+}
