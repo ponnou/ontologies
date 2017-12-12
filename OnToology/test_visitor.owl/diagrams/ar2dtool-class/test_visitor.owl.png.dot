@@ -1,0 +1,24 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1501"
+node [shape = rectangle, color="orange"]; "base:Point" "base:Controller" "base:AutomationServer" ; /*classes style*/
+	"base:hasType" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:hasClassId" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:connectsToAS" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:connectsToC" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:hasName" -> "owl:topDataProperty" [ label = "rdfs:subPropertyOf" ];
+	"base:connectsToP" -> "owl:topObjectProperty" [ label = "rdfs:subPropertyOf" ];
+	"NULL" -> "base:connectsToC" [ label = "owl:onProperty" ];
+	"NULL" -> "xsd:string" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "base:hasType" [ label = "owl:onProperty" ];
+	"NULL" -> "base:connectsToP" [ label = "owl:onProperty" ];
+	"NULL" -> "base:hasClassId" [ label = "owl:onProperty" ];
+	"NULL" -> "base:Controller" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "xsd:int" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "base:hasName" [ label = "owl:onProperty" ];
+	"NULL" -> "base:Point" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "base:hasUnit" [ label = "owl:onProperty" ];
+	"NULL" -> "base:AutomationServer" [ label = "owl:someValuesFrom" ];
+	"NULL" -> "base:connectsToAS" [ label = "owl:onProperty" ];
+
+}
